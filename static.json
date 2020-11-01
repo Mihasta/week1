@@ -1,7 +1,7 @@
 {
   "headers": {
     "/*": {
-      "X-Author": "fe9460a8e9194525bd2d531ba3371c"
+      "X-Author": "fe9460a8e9194525bd2d531ba3371c",
       "Access-Control-Allow-Origin": "*"
     }
   }
