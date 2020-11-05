@@ -1,8 +1,7 @@
 {
-  "trailingSlash": true,
   "routes": {
-    "/login/": "index.html",
-     "/sample/": "index2.html"
+    "/login/*": "index.html",
+     "/sample/*": "index2.html"
   },
   "headers": {
     "/**": {
