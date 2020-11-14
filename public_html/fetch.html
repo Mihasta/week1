@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <meta charset="utf-8">
+  <script>
+   function myFunction() {
+    let response = await fetch(document.getElementById("inp"));
+    let text = await response.text();
+    document.getElementById("inp").innerHTML = text;
+   }
+  </script>
  </head>
  <body>
   <input id="inp">
