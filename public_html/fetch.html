@@ -3,9 +3,9 @@
  <head>
   <script>
    function myFunction() {
-    let response = await fetch(document.getElementById("inp"));
+    let response = await fetch(document.getElementById("inp").value);
     let text = await response.text();
-    document.getElementById("inp").innerHTML = text;
+    document.getElementById("inp").value = text;
    }
   </script>
  </head>
