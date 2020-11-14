@@ -3,7 +3,8 @@
  <head>
   <script>
    function myFunction() {
-    let response = await fetch(document.getElementById("inp").value);
+    let url = document.getElementById("inp").value
+    let response = await fetch(url);
     let text = await response.text();
     document.getElementById("inp").value = text;
    }
