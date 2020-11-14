@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <style>
-   #inp { }
-  </style>
   <script>
    async function func() {
-    let url = document.getElementById("inp").value
-    let response = await fetch(url);
+    let input = document.getElementById("inp");
+    let response = await fetch(input.value);
     let text = await response.text();
-    document.getElementById("inp").value = text;
+    input.value = text;
    }
   </script>
  </head>
