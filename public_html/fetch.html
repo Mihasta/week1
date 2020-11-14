@@ -3,13 +3,15 @@
  <head>
   <script>
    async function func() {
-    let url = document.getElementById("inp").value
-    let response = await fetch(url);
     let input = document.getElementById("inp");
     let response = await fetch(input.value);
     let text = await response.text();
-    document.getElementById("inp").value = text;
     input.value = text;
    }
   </script>
  </head>
+ <body>
+  <input id="inp">
+  <button id="bt" onclick="func()">Отправить</button>
+ </body>
+</html>
